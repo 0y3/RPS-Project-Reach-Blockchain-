@@ -27,7 +27,7 @@ import * as backend from './build/index.main.mjs';
         getHand : async () => {
                         const handVar = Math.floor(Math.random() * 3);
                         console.log(`${playerName} played ${HAND[handVar]}`);
-                        if ( Math.random() <= 0.5 ) {
+                        if ( Math.random() <= 0.05 ) {
                             for ( let i = 0; i < 10; i++ ) {
                               console.log(`  ${playerName} takes too much time sending it back...`);
                               await stdlib.wait(1);
