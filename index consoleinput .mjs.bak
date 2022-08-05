@@ -1,4 +1,3 @@
-// import { loadStdlib } from '@reach-sh/stdlib';
 import { loadStdlib, ask } from '@reach-sh/stdlib';
 import * as backend from './build/index.main.mjs';
 
@@ -70,10 +69,10 @@ import * as backend from './build/index.main.mjs';
     }
     else{
         interact.acceptWager = async (amt) => {
-                                            // const accepted = await ask.ask(`Do you accept the wager of ${fmt(amt)}?`,
-                                            //                                 ask.yesno
-                                            //                             );
-                                            const accepted = await ask.yesno(`Do you accept the wager of ${fmt(amt)}?`);
+                                            const accepted = await ask.ask(`Do you accept the wager of ${fmt(amt)}?`,
+                                                                            ask.yesno
+                                                                        );
+                                            // const accepted = await ask.yesno(`Do you accept the wager of ${fmt(amt)}?`);
                                             if (!accepted) {process.exit(0);}
                                         };
     }
