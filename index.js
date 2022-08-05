@@ -3,7 +3,7 @@ import AppViews from './view/AppViews';
 import DeployerViews from './view/DeployerViews';
 import AttacherViews from './view/AttacherViews';
 import {renderDOM, renderView} from './view/render';
-import './asset/style.css';
+import './index.css';
 
 import { loadStdlib, ask } from '@reach-sh/stdlib';
 import * as backend from './build/index.main.mjs';
